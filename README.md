@@ -1,5 +1,5 @@
-# kirbi-translator module
-A module for [Kirbi](https://github.com/richardson-media-house/kirbi), that adds commands for translating your text into various ridiculous forms of speech... like 1337 or yoda.
+# doorman-translator module
+A module for [Doorman](https://github.com/FabricLabs/doorman), that adds commands for translating your text into various ridiculous forms of speech... like 1337, yoda, or erm.
 
 ## Usage
 
@@ -8,3 +8,6 @@ A module for [Kirbi](https://github.com/richardson-media-house/kirbi), that adds
 
 - !yodify <text>
   *example* - !yodify this is awesome
+
+- !erm <text>
+  *example* - !erm oh my god

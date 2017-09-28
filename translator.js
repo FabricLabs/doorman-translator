@@ -1,10 +1,12 @@
 const leet = require('leet');
+const erm = require('erm');
 
 module.exports = function () {
 	return {
 		commands: [
 			'leet',
-			'yodify'
+			'yodify',
+			'erm'
 		],
 		leet: {
 			usage: '<message>',
@@ -33,6 +35,17 @@ module.exports = function () {
 						return cb(result.return, msg);
 					});
 				});
+			}
+		},
+		erm: {
+			usage: '<statement>',
+			description: 'Translate to ERM',
+			process: (msg, suffix, isEdit, cb) => {
+				if (!suffix) {
+					return cb(erm('oh my god, it\'s broken'), msg);
+				}
+
+				return cb(erm(suffix), msg);
 			}
 		}
 	};
